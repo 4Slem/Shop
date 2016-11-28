@@ -1,0 +1,30 @@
+.top-line
+	z-index 1000
+	position fixed
+	right 0px
+	ul
+		margin 0
+		padding 0
+		box-shadow 0px 1px 0px rgba(215, 210, 239, .8)
+		background-color rgba(255, 255, 255, .8)
+		li
+			list-style none
+			display inline-block
+			a
+				color #666
+				text-transform uppercase
+				letter-spacing .7px
+				font-size 12px
+				padding 8px 18px 3px 18px
+				text-decoration none
+				display block
+				transition box-shadow .3s
+				&:hover
+					box-shadow 0px 2px 0px #3c3d4f
+					color #333
+			&:last-child a
+				color #f66062
+				font-weight bold
+			&:last-child a:hover
+				box-shadow none
+				

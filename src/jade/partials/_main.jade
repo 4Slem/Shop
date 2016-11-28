@@ -1,0 +1,52 @@
+include ../mixins/block-tov.jade
+
+main.col-lg-10.col-md-9.col-sm-9.col-xs-10
+	include ../components/_top-line.jade
+
+	include ../components/_home-slider.jade
+	.social.hidden-sm.hidden-xs
+		a(href="")
+			i(class="fa fa-facebook fa-2x facebook" aria-hidden="true")
+		a(href="")
+			i(class="fa fa-vk fa-2x vk" aria-hidden="true")
+		a(href="")
+			i(class="fa fa-twitter fa-2x twitter" aria-hidden="true")
+	hr
+	.table.col-lg-12.col-md-12.col-sm-12.col-xs-12
+		.col-lg-3.col-md-2.col-sm-0.col-xs-0
+		.col-lg-2.col-md-3.col-sm-4.col-xs-12
+			.block
+				a(href="tablet.html")
+					i(class="fa fa-tablet fa-5x" aria-hidden="true")
+					br
+					| Планшеты
+		.col-lg-2.col-md-3.col-sm-4.col-xs-12
+			.block 
+				a(href="phone.html")
+					i(class="fa fa-mobile fa-5x" aria-hidden="true")
+					br
+					| Телефоны
+		.col-lg-2.col-md-3.col-sm-4.col-xs-12
+			.block
+				a(href="laptop.html")
+					i(class="fa fa-laptop fa-5x" aria-hidden="true")
+					br
+					| Ноутбуки
+		.col-lg-3.col-md-2.col-sm-0.col-xs-0
+
+	group.col-lg-12.col-md-12.col-sm-12.col-xs-12
+		p.name-block ПОПУЛЯРНЫЕ ТОВАРЫ
+		hr
+		+block-tov          
+		+block-tov-laptop                
+		+block-tov-tablet                
+		+block-tov     
+
+	group.col-lg-12.col-md-12.col-sm-12.col-xs-12
+		p.name-block ГОРЯЧИЕ НОВИНКИ
+		hr
+		+block-tov-tablet
+		+block-tov
+		+block-tov-laptop
+		+block-tov-tablet
+		

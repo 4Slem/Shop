@@ -1,0 +1,114 @@
+$header-color = #f66062
+$logo-color = #d74f51
+$header-height = 55px
+
+.clear
+	clear both
+
+header.container-fluid
+	padding 0
+	z-index 1000
+header
+	width 100%
+	position fixed
+	background-color $header-color
+	
+	.logo
+		height $header-height
+		line-height $header-height
+		background-color $logo-color
+		font bold 16px/$header-height "Helvetica Neue", Helvetica, Arial, sans-serif
+		text-transform uppercase
+		text-align center
+		letter-spacing 1px
+		cursor pointer
+		a
+			white-space normal
+			overflow hidden
+			display block
+			color #6c3e2f
+			text-decoration none
+			
+		
+	.search
+		.wrap-search
+			max-width 400px
+			line-height $header-height
+			margin 0 auto
+			input 
+				height 30px
+				width 100%
+				border none
+				color #333
+				background-color $header-color
+				border-bottom 1px solid #333
+				transition border-radius .2s
+				padding 0 15px 0 15px
+				letter-spacing 1px
+				&::-webkit-input-placeholder
+					color $logo-color
+				&:focus
+					border 1px solid #333
+					border-radius 2px
+					outline none
+			i
+				margin-left -20px
+				color #333
+	.account[class*='col-']
+		padding 0	
+	.account
+		min-width 260px
+		.card
+			padding 0 5px
+			float left
+			width 140px
+			text-align center
+			transition background-color .3s
+			&:hover
+				cursor pointer
+				background-color $logo-color
+			.ico
+				float left
+				i
+					line-height $header-height
+					color #333
+					
+			.text
+				margin-left 5px
+				line-height $header-height
+				float left
+				text-transform uppercase
+				font bold 11px/$header-height Arial
+				letter-spacing .5px
+			.count
+				width 20px
+				height 20px
+				box-shadow 0 0 1px
+				margin 17px 5px 5px 3px
+				float left
+				text-transform uppercase
+				font bold 12px/20px Arial
+				text-align center
+				border-radius 50%
+				background-color #333
+				color $header-color
+				
+		.log
+			float left
+			margin-left 10px
+			.sing
+				width 80px
+				height 30px
+				border 1px solid #6c3e2f
+				border-radius 2px
+				font bold 12px/30px Arial
+				text-align center
+				margin-top 14px
+				cursor pointer
+				transition background-color .3s
+				&:hover
+					background-color $logo-color
+
+				
+				
+				

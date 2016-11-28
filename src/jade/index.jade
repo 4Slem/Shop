@@ -1,0 +1,25 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		block data
+			meta(name="description" text="Slem")
+		link(rel="stylesheet", href="css/main.min.css")
+		block title
+			title Головна
+	body
+		block header
+			include ./partials/_header.jade
+		
+		block aside
+			include ./partials/_aside-home.jade
+
+		block main
+			include ./partials/_main.jade
+
+		block footer
+			include ./partials/_footer.jade
+		script(src="js/jquery.min.js")
+		script(src="js/bootstrap.min.js")
